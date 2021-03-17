@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <a href="index1.html">To-do list</a>
+  <div class="container">
+    <div class="interface">
+      <h3 class="interface__title">Перевод ДНК в РНК</h3>
+      <form name="formDNA">
+        <input type="text" name="DNA" placeholder="Например: GTCA">
+        <input type="button" value="Ok" onclick="dna()">
+      </form>
+      <p id='dnaAnswer'>Вывод</p>
+    </div>
+    <script src="js/scripts.js"></script>
+
+    <div class="interface">
+      <h2 class="interface__title">Палиндром</h2>
+      <form name="palForm">
+        <input name="palInput" type="text" placeholder="Например: Дед" >
+        <input type="button" value="Ok" onClick="isPalindrome(palInput.value)" > 
+      </form>
+      <p id='palAnswer'>Вывод</p>
+      </div>
+
+    <div class="interface">
+      <h2 class="interface__title">SubStr</h2>
+      <form name="mySubstrForm">
+        <p>Текст</p>
+        <input name="sabInputText" type="text" placeholder="Слово">
+        <p>Индекс строки</p>
+        <input name="sabInput1" type="text" " placeholder="1">
+        <p>Длина слова</p>
+        <input name="sabInput2" type="text" " placeholder="5">
+        <input type="button" value="Ok" onClick="substr(sabInputText.value,sabInput1.value,sabInput2.value)" > 
+    </form>
+      <p id='subStrAnswer'>Вывод</p>
+    </div>
+  </div>
+</body>
+</html>
